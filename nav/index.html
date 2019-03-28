@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav Bar</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		  crossorigin=""/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<header>
+			<nav class="container">
+				<ul>
+					<li>LOGO</li>
+					<li id="search"> <i class="fas fa-search"></i> SEARCH
+						<div class="form-group nav-flotante">
+							<div class="navegador-interno">
+							<span class="arr1"></span>
+							
+							 <input type="text" class="form-control search-input" placeholder="Buscar: Freelancer" aria-label="Username" aria-describedby="addon-wrapping">
+							
+							<ul class="menu-interno">
+								<h4 class="encabezado">Buscar por Tipo</h4>
+								<li class="col-md-4">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-user"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Freelancers</span><br>
+										<span class="subtitulo">Busca tu Freelancer Favorito</span>
+									</div>
+									</a>
+								</li>
+								
+									
+									
+								<li class="col-md-4">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-desktop"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Proyectos</span><br>
+										<span class="subtitulo">Explora proyectos disponibles en los cuales trabajar</span>
+									</div>
+									</a>
+								</li>
+								<li class="col-md-4">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-trophy"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Concursos</span><br>
+										<span class="subtitulo">Explora concursos disponibles para participar</span>
+									</div>
+									</a>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</li>
+					<li id="notificacion"> <i class="fas fa-bell"></i> NOTIFICACIONES
+						<div class="form-group nav-notificacion">
+							<div class="navegador-interno">
+							<span class="arr2"></span>
+								<h4 class="encabezado">Actualizaciones Recientes</h4>
+							<ul class="menu-interno">
+
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-user"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Freelancers</span><br>
+										<span class="subtitulo">Busca tu Freelancer Favorito</span>
+									</div>
+									</a>
+								</li>
+								
+									
+									
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-desktop"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Proyectos</span><br>
+										<span class="subtitulo">Explora proyectos disponibles en los cuales trabajar</span>
+									</div>
+									</a>
+								</li>
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-trophy"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Concursos</span><br>
+										<span class="subtitulo">Explora concursos disponibles para participar</span>
+									</div>
+									</a>
+								</li>
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-user"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Freelancers</span><br>
+										<span class="subtitulo">Busca tu Freelancer Favorito</span>
+									</div>
+									</a>
+								</li>
+								
+									
+									
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-desktop"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Proyectos</span><br>
+										<span class="subtitulo">Explora proyectos disponibles en los cuales trabajar</span>
+									</div>
+									</a>
+								</li>
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-trophy"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Concursos</span><br>
+										<span class="subtitulo">Explora concursos disponibles para participar</span>
+									</div>
+									</a>
+								</li>
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-user"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Freelancers</span><br>
+										<span class="subtitulo">Busca tu Freelancer Favorito</span>
+									</div>
+									</a>
+								</li>
+								
+									
+									
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-desktop"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Proyectos</span><br>
+										<span class="subtitulo">Explora proyectos disponibles en los cuales trabajar</span>
+									</div>
+									</a>
+								</li>
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-trophy"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Concursos</span><br>
+										<span class="subtitulo">Explora concursos disponibles para participar</span>
+									</div>
+									</a>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</li>
+					<li id="user"><i class="fas fa-users"></i> HORENCIO ALEI RUIZ MATA
+						<div class="form-group nav-notificacion">
+							<div class="navegador-interno">
+							<span class="arr2"></span>
+								<h4 class="encabezado">Actualizaciones Recientes</h4>
+							<ul class="menu-interno">
+								<li class="col-md-12">
+									<a href="" class="boton">
+									<div class="col-md-2">
+										<br>
+										<i class="fas fa-trophy"></i> 
+									</div>
+									<div class="col-md-10">
+										<span class="titulo">Concursos</span><br>
+										<span class="subtitulo">Explora concursos disponibles para participar</span>
+									</div>
+									</a>
+								</li>
+							</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="map" class="map" ></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+		  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+		  crossorigin=""></script>
+		<script type="text/javascript" src="javascript.js"></script>
+	</body>
+</html>
